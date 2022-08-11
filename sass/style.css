@@ -445,8 +445,9 @@ h4 {
 
 .tab__text-content {
   position: absolute;
+  width: 476px;
   top: 0;
-  left: 50%;
+  left: 20%;
 }
 
 .tab {
