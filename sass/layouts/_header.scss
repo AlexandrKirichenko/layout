@@ -36,11 +36,14 @@
 
 .signup-form__element {
   width: 285px;
-  margin: 35px auto;
+  margin: 35px auto 0;
   @include font($size: 1.4rem, $height: 3.1rem, $weight: 400);
   border-bottom: 1px solid $clrDarkGrey;
   &:focus {
     border-bottom: 1px solid $clrOrange;
+  }
+  &--last {
+    margin-bottom: 49px;
   }
 }
 
