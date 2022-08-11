@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap');
+@import "base/normalize";
+
+// Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+//Base
+@import "base/base";
+@import "base/social-icons";
+@import "base/buttons";
+
+// Layouts
+@import "layouts/container";
+@import "layouts/header";
+@import "layouts/columns";
+
+
+// Components
+@import "components/navigation";
+@import "components/about";
+@import "components/design";
+
+

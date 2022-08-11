@@ -1,0 +1,68 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  max-width:1920px;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  @extend %font-primary;
+  @include font($size: 1.4rem, $height: 2rem, $weight: 400);
+  color: $clrPrimary;
+}
+
+
+img,svg {
+  max-width: 100%;
+  display: block;
+}
+
+.bg-gray {
+  background-color: $clrLightGrey;
+}
+
+h1 {
+  @extend %font-titles;
+  @include font($size: 3.6rem, $height: 4.3rem, $weight:400);
+  color: $clrLight;
+  font-size: clamp(3rem, calc(1rem + 2vw), 3.6rem);
+  @include pseudo($top:114,$right: inherit) {
+    background: $clrOrange;
+    width: 64px;
+    height: 2px;
+    margin: 0px auto -36px;
+  };
+}
+
+h2 {
+  @extend %font-titles;
+  @include font($size: 3.6rem, $height: 4.3rem, $weight:400);
+  color: $clrSemiDark;
+  &[data-color="white"] {
+    color: $clrLight;
+  }
+  
+  @include pseudo() {
+    background: $clrOrange;
+    width: 64px;
+    height: 2px;
+    margin: 0px auto -30px;;
+  };
+}
+
+h4 {
+  @include font($size: 2.0rem, $height: 1.7rem, $weight:700);
+  color: $clrDark;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.sections-subtitle {
+  @include font($size: 1.4rem, $height: 1.4rem, $weight: 400);
+  color: $clrDarkGrey;
+  padding-top: 60px;
+  text-align: center;
+}
+

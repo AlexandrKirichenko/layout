@@ -1,0 +1,17 @@
+.ico {
+  cursor: pointer;
+  color: $clrLightGrey;
+ 
+  &--lg {
+    font-size: 2.1em;
+  }
+  
+  &--sm {
+    font-size: 1.7em;
+  }
+  
+  &:hover {
+    color: $clrLight;
+    @extend %transition;
+  }
+}

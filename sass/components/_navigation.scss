@@ -1,0 +1,26 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 19px 8px;
+  background-color: $clrDark;
+  box-shadow: 0 0 0 100vmax $clrDark;
+  clip-path: inset(0 -100vmax);
+}
+
+.nav {
+  display: flex;
+  gap: 48px;
+}
+
+.nav__link {
+  list-style: none;
+  color: $clrLight;
+  @include font($size: 1.4rem, $height: inherit, $weight: 400);
+  &:hover,
+  &:focus {
+    color: $clrOrange;
+    @extend %transition;
+  }
+}

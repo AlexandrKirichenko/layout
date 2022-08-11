@@ -1,0 +1,32 @@
+.btn {
+  @extend %font-primary;
+  @include font($size: 1.5rem, $height: 1.3rem, $weight: 600);
+  padding: 14px 25px;
+  min-width: 135px;
+  color: $clrLight;
+  cursor: pointer;
+  @extend %transition;
+  &--bordered {
+    border: 1px solid $clrLight;
+    background-color: rgba(28,28,28,0);
+    color: $clrLight;
+    &:hover {
+      color: $clrSemiDark;
+      background: $clrLight;
+    }
+  }
+  &--colored {
+    background: $clrOrange;
+    &:hover {
+      background: $clrLightOrange;
+    }
+  }
+  &--form {
+    background: $clrOrange;
+    padding: 21px 0 20px;
+    width: 100%;
+    &:hover {
+      background: $clrLightOrange;
+    }
+  }
+}

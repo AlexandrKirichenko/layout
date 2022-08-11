@@ -1,0 +1,77 @@
+.header {
+  background: url("../../assets/images/headerfone.png") fixed, rgba(black,0.9);
+  background-size: cover;
+  width: 100%;
+  &__nav {
+    margin-left: auto;
+  }
+}
+
+.header__content {
+  padding-top: 109px;
+  color: $clrLight;
+}
+
+.header-form {
+
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  width: 360px;
+  margin-left: auto;
+  background-color: white;
+  h3 {
+    @include font($size: 2rem, $height: 3.1rem, $weight: 700);
+    padding: 18px 0 15px;
+    color: $clrLightDark;
+    span {
+      color: $clrOrange;
+    }
+  }
+}
+
+.signup-form__element {
+  width: 285px;
+  margin: 35px auto;
+  @include font($size: 1.4rem, $height: 3.1rem, $weight: 400);
+  border-bottom: 1px solid $clrDarkGrey;
+  &:focus {
+    border-bottom: 1px solid $clrOrange;
+  }
+}
+
+.content-info {
+  h1{
+    padding-top: 21px;
+  }
+  .subtitle-transparent {
+    @extend %font-titles;
+    @include font($size: 1.6rem, $height: 2.3rem, $weight: 400);
+    opacity: 0.8;
+    &--position {
+      padding: 82px 0 44px;
+    }
+  }
+  button {
+    margin-bottom: 137px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  &--sm {
+    background-image: url("../../assets/svg/logo.svg");
+    width: 79px;
+    height: 27px;
+  }
+  &--lg {
+    background-image: url("../../assets/svg/logo-lg.svg");
+    width: 175px;
+    height: 60px;
+  }
+}
+

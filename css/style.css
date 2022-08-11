@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.nav__link:hover, .nav__link:focus, .btn, .ico:hover {
+  transition: all 0.3s ease-out;
+}
+
+.btn, body {
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+.content-info .subtitle-transparent, h2, h1 {
+  font-family: "Raleway", Verdana, sans-serif;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  max-width: 1920px;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #86878B;
+}
+
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+.bg-gray {
+  background-color: #CCCCCC;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: clamp(3rem, 1rem + 2vw, 3.6rem);
+  position: relative;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  top: 114;
+  bottom: 0;
+  left: 0;
+  right: inherit;
+  background: #F98837;
+  width: 64px;
+  height: 2px;
+  margin: 0px auto -36px;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #212121;
+  position: relative;
+}
+h2[data-color=white] {
+  color: #ffffff;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  top: 78;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F98837;
+  width: 64px;
+  height: 2px;
+  margin: 0px auto -30px;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.7rem;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.sections-subtitle {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #86878B;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.ico {
+  cursor: pointer;
+  color: #CCCCCC;
+}
+.ico--lg {
+  font-size: 2.1em;
+}
+.ico--sm {
+  font-size: 1.7em;
+}
+.ico:hover {
+  color: #ffffff;
+}
+
+.btn {
+  font-size: 1.5rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+  font-style: normal;
+  padding: 14px 25px;
+  min-width: 135px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn--bordered {
+  border: 1px solid #ffffff;
+  background-color: rgba(28, 28, 28, 0);
+  color: #ffffff;
+}
+.btn--bordered:hover {
+  color: #212121;
+  background: #ffffff;
+}
+.btn--colored {
+  background: #F98837;
+}
+.btn--colored:hover {
+  background: #fa9958;
+}
+.btn--form {
+  background: #F98837;
+  padding: 21px 0 20px;
+  width: 100%;
+}
+.btn--form:hover {
+  background: #fa9958;
+}
+
+.container {
+  max-width: 1156px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: url("../../assets/images/headerfone.png") fixed, rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  width: 100%;
+}
+.header__nav {
+  margin-left: auto;
+}
+
+.header__content {
+  padding-top: 109px;
+  color: #ffffff;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  width: 360px;
+  margin-left: auto;
+  background-color: white;
+}
+.signup-form h3 {
+  font-size: 2rem;
+  line-height: 3.1rem;
+  font-weight: 700;
+  font-style: normal;
+  padding: 18px 0 15px;
+  color: #333333;
+}
+.signup-form h3 span {
+  color: #F98837;
+}
+
+.signup-form__element {
+  width: 285px;
+  margin: 35px auto;
+  font-size: 1.4rem;
+  line-height: 3.1rem;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 1px solid #86878B;
+}
+.signup-form__element:focus {
+  border-bottom: 1px solid #F98837;
+}
+
+.content-info h1 {
+  padding-top: 21px;
+}
+.content-info .subtitle-transparent {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.8;
+}
+.content-info .subtitle-transparent--position {
+  padding: 82px 0 44px;
+}
+.content-info button {
+  margin-bottom: 137px;
+}
+
+.logo {
+  display: inline-block;
+}
+.logo--sm {
+  background-image: url("../../assets/svg/logo.svg");
+  width: 79px;
+  height: 27px;
+}
+.logo--lg {
+  background-image: url("../../assets/svg/logo-lg.svg");
+  width: 175px;
+  height: 60px;
+}
+
+.layout-4-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-4-column > * {
+  flex-basis: 21%;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-3-column > * {
+  flex-basis: 30%;
+}
+.layout-3-column:after {
+  content: "";
+  width: 30%;
+  display: block;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-column > * {
+  flex-basis: 48%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 19px 8px;
+  background-color: black;
+  box-shadow: 0 0 0 100vmax black;
+  clip-path: inset(0 -100vmax);
+}
+
+.nav {
+  display: flex;
+  gap: 48px;
+}
+
+.nav__link {
+  list-style: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: inherit;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #F98837;
+}
+
+.design {
+  background: url("../../assets/images/design.png"), rgba(0, 0, 0, 0.9);
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
