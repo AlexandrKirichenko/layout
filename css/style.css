@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.nav__link:hover, .nav__link:focus, .btn, .ico:hover {
+.nav__link:hover, .nav__link:focus, .btn, .ico--sm:hover, .ico--lg:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -181,10 +181,13 @@ h4 {
 .ico--lg {
   font-size: 3.1em;
 }
+.ico--lg:hover {
+  color: #86878B;
+}
 .ico--sm {
   font-size: 1.7em;
 }
-.ico:hover {
+.ico--sm:hover {
   color: #ffffff;
 }
 
@@ -220,6 +223,15 @@ h4 {
 }
 .btn--form:hover {
   background: #fa9958;
+}
+.btn--tabs {
+  width: 112px;
+  height: 112px;
+  background: black;
+  padding: 21px 0 20px;
+}
+.btn--tabs:hover, .btn--tabs:active {
+  background: #F98837;
 }
 
 .container {
@@ -396,6 +408,52 @@ h4 {
 .brands__icons {
   display: flex;
   gap: 60px;
+}
+
+.tabs__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands__collapse {
+  cursor: pointer;
+  display: inline-block;
+  background: #cdf;
+  padding: 30px;
+}
+
+.brands__collapse + input {
+  display: none;
+}
+
+.brands__collapse + input + div {
+  display: none;
+}
+
+.brands__collapse + input:checked + div {
+  display: block;
+}
+
+.brands__collapse + input:checked + div {
+  display: block;
+}
+
+.tabs__content-container {
+  position: relative;
+  flex-grow: 3;
+}
+
+.tab__text-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.tab {
+  display: flex;
+}
+.tab .btn btn--tabs:checked {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+.tabs__wrapper {
+  display: flex;
+  //align-items: center;
+  justify-content: space-between;
+}
+
+.brands__collapse {
+  cursor: pointer;
+  display: inline-block;
+  background: #cdf;
+  padding: 30px;
+}
+.brands__collapse {
+  + input {
+    display: none;
+  }
+}
+.brands__collapse + input + div {
+  display: none;
+}
+
+.brands__collapse + input:checked + div {
+  display: block;
+}
+
+.brands__collapse + input:checked + div {
+  display: block;
+}
+.tabs__content-container {
+  position: relative;
+  flex-grow: 3;
+}
+
+.tab__text-content{
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.tab {
+  display: flex;
+  .btn btn--tabs:checked {
+    background-color: red;
+  }
+}
+
+
+

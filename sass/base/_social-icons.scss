@@ -4,14 +4,17 @@
  
   &--lg {
     font-size: 3.1em;
+    &:hover {
+      color: $clrDarkGrey;
+      @extend %transition;
+    }
   }
   
   &--sm {
     font-size: 1.7em;
-  }
-  
-  &:hover {
-    color: $clrLight;
-    @extend %transition;
+    &:hover {
+      color: $clrLight;
+      @extend %transition;
+    }
   }
 }
