@@ -1,7 +1,11 @@
 .design {
-  background: url("../../assets/images/design.png"), rgba(black,0.9);
+  background: $clrDark;
+}
+
+.design__wrap {
+  background: url("../../assets/images/axure_bg_img.png");
   background-size: cover;
+  opacity: 0.8;
   width: 100%;
   color: #fff;
 }
-

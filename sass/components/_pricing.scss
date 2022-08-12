@@ -1,0 +1,92 @@
+.pricing__container {
+  text-align: center;
+  padding-top: 102px;
+}
+
+.pricing-subtitle {
+  padding-top: 50px;
+}
+
+.pricing__content {
+  padding: 80px 0 97px;
+  align-items: flex-end;
+}
+
+.card {
+  position: relative;
+  max-width: 343px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  &:hover {
+    transform: scale(1.03);
+    @extend %transition;
+  }
+  &__title {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $clrLightDark;
+    border: 1px solid $clrLight;
+    h4 {
+      color: $clrLight;
+    }
+  }
+  &__price {
+    height: 151px;
+    position: relative;
+    background: $clrDark;
+    opacity: 0.8;
+    .card__term {
+      padding-top: 118px;
+      @include font($size: 1.4rem, $height: 1.5rem, $weight: 500,$style: italic);
+    }
+    &--bordered {
+      border-bottom: 4px solid $clrDarkOrange;
+    }
+  }
+  &__recommended {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $clrDarkOrange;
+    @include font($size: 1.4rem, $height: 1.2rem, $weight: 700);
+    height: 40px;
+    color: $clrLight;
+  }
+  
+  &__list {
+    background: $clrLight;
+    border-left: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    li {
+      padding: 14px 0;
+      border-bottom: 1px solid #F5F5F5;
+    }
+  }
+}
+
+.price__value {
+  @extend %font-titles;
+  position: absolute;
+  z-index: 11;
+  top: 6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  letter-spacing: 0;
+}
+
+.value__currency {
+  @include font($size: 3rem, $height: 3rem, $weight: 700);
+  letter-spacing: 0;
+}
+.value__number-sm {
+  @include font($size: 9rem, $height: 9rem, $weight: 700);
+}
+
+.value__number-lg {
+  @include font($size: 9.2rem, $height: 9.2rem, $weight: 700);
+  letter-spacing: 0;
+}
+

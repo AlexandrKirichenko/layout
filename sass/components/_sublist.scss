@@ -1,0 +1,48 @@
+.sublist__container {
+  padding: 106px 0 91px;
+  .sublist__content {
+    padding-left: 73px;
+  }
+}
+
+.sublist__image {
+  padding-top: 5px;
+}
+
+.sublist__content {
+  h4 {
+    @include pseudo($right: inherit) {
+      background: $clrOrange;
+      width: 64px;
+      height: 2px;
+      margin: 0px auto -33px;
+    };
+  }
+  .content__text {
+    padding-top: 61px;
+    max-width: 415px;
+  }
+}
+
+.sublist__lists {
+  padding: 8px 0 0 71px;
+  position: relative;
+  p {
+    padding-top: 12px;
+  }
+  h6 {
+    font-weight: 700;
+    color: $clrSmallTitles;
+  }
+  li {
+    padding-top: 31px;
+  }
+  @include pseudo($content:url('../../assets/svg/down.svg'),$loc:before, $right: -100px, $bottom: 54px) {
+    width: 40px;
+    height: 40px;
+  };
+  @include pseudo($content:url('../../assets/svg/up.svg'),$right: -100px,$top: 42px) {
+    width: 40px;
+    height: 40px;
+  };
+}

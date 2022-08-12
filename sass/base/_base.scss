@@ -2,6 +2,8 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
   max-width:1920px;
+  margin-inline: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   @extend %font-primary;
   @include font($size: 1.4rem, $height: 2rem, $weight: 400);
   color: $clrPrimary;
+  
 }
 
 img,svg {
@@ -41,11 +44,11 @@ h2 {
     color: $clrLight;
   }
   
-  @include pseudo() {
+  @include pseudo($top: 65px) {
     background: $clrOrange;
     width: 64px;
     height: 2px;
-    margin: 0px auto -30px;;
+    margin: 0px auto -30px;
   };
 }
 
@@ -60,7 +63,7 @@ h4 {
 
 .sections-subtitle {
   @include font($size: 1.4rem, $height: 1.4rem, $weight: 400);
-  color: $clrDarkGrey;
+  color: $clrPrimary;
   padding-top: 60px;
   text-align: center;
 }

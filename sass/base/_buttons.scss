@@ -5,6 +5,7 @@
   min-width: 135px;
   color: $clrLight;
   cursor: pointer;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.2);
   @extend %transition;
   &--bordered {
     border: 1px solid $clrLight;
@@ -21,6 +22,11 @@
       background: $clrLightOrange;
     }
   }
+  &--sm {
+    min-width: 121px;
+    padding: 16px 25px 17px;
+  }
+  
   &--form {
     background: $clrOrange;
     padding: 21px 0 20px;
