@@ -2,4 +2,10 @@
   max-width: $contentWidth;
   margin: auto;
   padding: 0 20px;
+  @include media-tablet {
+    padding: 0 1em;
+  }
+  @include media-mobile {
+    padding: 0 0.7em;
+  }
 }

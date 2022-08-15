@@ -1,12 +1,19 @@
 .ico {
   cursor: pointer;
-  color: $clrLightGrey;
+  color: $clrFooterIcons;
  
   &--lg {
     font-size: 3.1em;
     &:hover {
       color: $clrPrimary;
       @extend %transition;
+    }
+    @include media-laptop {
+      font-size: 2.4em;
+    }
+  
+    @include media-tablet {
+      font-size: 2.1em;
     }
   }
   
