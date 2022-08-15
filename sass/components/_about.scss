@@ -1,8 +1,22 @@
-.about__container{
+.about__container {
   padding: 100px 0 100px;
   text-align: center;
+  
   .about__subtitle {
     padding-top: 55px;
+  }
+  
+  @include media-laptop {
+    padding: 80px 5px 80px;
+  }
+  
+  h2 {
+    @include media-laptop {
+      @include pseudo ($top: 63px)
+    }
+    @include media-mobile {
+      @include pseudo ($top: 50px)
+    }
   }
   
   .about-content {
@@ -10,7 +24,42 @@
     align-items: center;
     justify-content: space-around;
     gap: 32px;
-    //flex-wrap: wrap;
+    @include media-laptop {
+      gap: 20px;
+    }
+    @include media-laptop {
+      flex-wrap: wrap;
+    }
+    
+    &__img {
+      width: 70px;
+      height: 70px;
+      @include media-laptop {
+        width: 55px;
+        height: 55px;
+      }
+      
+      &--1 {
+        background: url("../../assets/svg/icon-lamp.svg");
+        @include media-laptop {
+          background: url("../../assets/svg/icon-lamp-sm.svg");
+        }
+      }
+      
+      &--2 {
+        background: url("../../assets/svg/icon-keyboard.svg");
+        @include media-laptop {
+          background: url("../../assets/svg/icon-keyboard-sm.svg");
+        }
+      }
+      
+      &--3 {
+        background: url("../../assets/svg/icon-lightning.svg");
+        @include media-laptop {
+          background: url("../../assets/svg/icon-lightning-sm.svg");
+        }
+      }
+    }
   }
   
   .about-content__block {
@@ -20,6 +69,16 @@
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    @include media-laptop {
+      margin-top: 50px;
+    }
+    @include media-tablet {
+      margin-top: 40px;
+    }
+    @include media-mobile {
+      margin-top: 30px;
+    }
+    
     h4 {
       padding: 29px 0 25px;
     }

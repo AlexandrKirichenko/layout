@@ -1,3 +1,8 @@
+#heder {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: $clrDark;
 }

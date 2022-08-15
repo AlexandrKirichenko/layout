@@ -1,15 +1,22 @@
-//.standard__wrapper {
-//  max-width: 1240px;
-//  margin: auto;
-//  padding: 0 20px;
-//}
-
 .standard__container {
   padding: 77px 0 48px;
+    @include media-laptop {
+      justify-content: center;
+  }
+ 
+  @include media-mobile {
+    padding: 2px 0;
+  }
 }
 
 .standard__content {
   padding: 28px 0 0 30px;
+  @include media-laptop {
+    flex-basis: 85%;
+  }
+  @include media-tablet {
+    flex-basis: 90%;
+  }
   h4 {
     @include pseudo($right: inherit) {
       background: $clrOrange;
@@ -22,6 +29,6 @@
     padding-top: 60px;
   }
   p:nth-child(3) {
-    padding-top: 20px;
+    padding: 20px 0;
   }
 }

@@ -20,7 +20,7 @@
   padding-top: 15px;
 
   @include media-laptop {
-    margin-left: auto;
+    margin: auto;
   }
 }
 
@@ -41,7 +41,6 @@
     }
   }
   @include media-laptop {
-    
     max-width: 85%;
   }
   @include media-mobile {
@@ -51,6 +50,9 @@
 
 .sublist__lists {
   padding-top: 8px;
+  @include media-laptop {
+    font-size: 1.2rem;
+  }
   h6 {
     font-weight: 700;
     color: $clrSmallTitles;
