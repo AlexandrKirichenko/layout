@@ -3,7 +3,11 @@
 }
 
 .layout-3-column {
-  @include columns($width: 30%);
+  @include columns($width: 30%,);
+}
+
+.layout-3-column-around {
+  @include columns($width: 30%,$content: space-around);
 }
 
 .layout-2-column {

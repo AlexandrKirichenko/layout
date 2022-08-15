@@ -1,0 +1,17 @@
+.footer {
+  background-color: $clrDark;
+  min-height: 83px;
+  display: flex;
+  &__social {
+    display: flex;
+    gap: 28px;
+    padding: 16px 0 10px;
+  }
+  p {
+    color: $clrMediumGrey;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+

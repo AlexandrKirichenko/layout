@@ -1,0 +1,58 @@
+.contact__container {
+  position: relative;
+  padding: 100px 0 81px;
+  p {
+    padding-top: 50px;
+  }
+}
+
+.contact-form {
+  padding-top: 50px;
+  &__element {
+    height: 31px;
+  }
+  input, textarea {
+    border-bottom: 1px solid $clrInputsLining;
+    width: min(96%, 527px);
+    margin: 30px auto 0;
+    //height: 31px;
+    &::placeholder {
+      padding: 10px 0 9px 13px;
+    }
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact__line {
+    min-height: 153px;
+  }
+  
+  button {
+    margin-top: 37px;
+  }
+}
+
+.contact__line {
+  width: 100%;
+}
+
+.scroll-up {
+  background: $clrOrange;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  right: 5%;
+  font-size: 16px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  &:hover {
+    background: $clrLightOrange;
+  }
+  a {
+    color: #ffffff;
+  }
+}

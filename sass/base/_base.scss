@@ -6,12 +6,13 @@ html {
   overflow-x: hidden;
 }
 
+
 body {
   text-rendering: optimizeSpeed;
   @extend %font-primary;
   @include font($size: 1.4rem, $height: 2rem, $weight: 400);
   color: $clrPrimary;
-  
+  position: relative;
 }
 
 img,svg {
@@ -34,15 +35,21 @@ h1 {
     height: 2px;
     margin: 0px auto -36px;
   };
+  @include media-tablet {
+    @include font($size: 3.2rem, $height: 3.8rem, $weight:400);
+  }
+  @include media-mobile {
+    @include font($size: 2.2rem, $height: 2.8rem, $weight:400);
+  }
 }
 
 h2 {
   @extend %font-titles;
   @include font($size: 3.6rem, $height: 4.3rem, $weight:400);
   color: $clrSemiDark;
-  &[data-color="white"] {
-    color: $clrLight;
-  }
+  //&[data-color="white"] {
+  //  color: $clrLight;
+  //}
   
   @include pseudo($top: 65px) {
     background: $clrOrange;

@@ -1,11 +1,39 @@
 .design {
   background: $clrDark;
+ &__title {
+   position: absolute;
+   z-index: 9;
+   left:50%;
+   transform:translate(-50%, 67px);
+   color: $clrLight;
+ }
+ 
+  &__btn {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    transform:translate(-50%, 215px);
+    color: $clrLight;
+  }
 }
 
-.design__wrap {
+.design__container {
+  position: relative;
+  height: 0;
+}
+
+
+.design-bg {
   background: url("../../assets/images/axure_bg_img.png");
   background-size: cover;
   opacity: 0.8;
+  min-height: 325px;
   width: 100%;
-  color: #fff;
+  color: $clrLight;
+  .design-subtitle {
+    @extend %font-titles;
+    @include font($size: 1.6rem, $height: 1.6rem, $weight: 300);
+    padding-top: 163px;
+    text-align: center;
+  }
 }

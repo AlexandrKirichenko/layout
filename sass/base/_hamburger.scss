@@ -1,0 +1,48 @@
+#burger, [for=burger] {
+  display: none;
+  font-size: 28px;
+  width: 30px;
+  color: $clrPrimary;
+}
+
+[for=burger] {
+  @include media-mobile {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    width: 30px;
+    text-align: center;
+    right: 20px;
+  }
+  
+  &:before {
+    content: " \2630";
+  }
+}
+
+#burger {
+  @include media-mobile {
+    &:checked + label + nav {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      animation: show .5s ease;
+    }
+    
+    &:checked + [for=burger]:before {
+      content: "\00D7";
+      font-size: 40px;
+    }
+    
+    @keyframes show {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

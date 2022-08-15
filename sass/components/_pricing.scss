@@ -8,13 +8,13 @@
 }
 
 .pricing__content {
-  padding: 80px 0 97px;
+  padding: 80px 0 94px;
   align-items: flex-end;
 }
 
 .card {
   position: relative;
-  max-width: 343px;
+  max-width: 345px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   &:hover {
     transform: scale(1.03);
@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     background: $clrLightDark;
-    border: 1px solid $clrLight;
+    border-bottom: 1px solid $clrLight;
     h4 {
       color: $clrLight;
     }
@@ -59,7 +59,8 @@
     border-left: 1px solid #F5F5F5;
     border-right: 1px solid #F5F5F5;
     li {
-      padding: 14px 0;
+      height: 40px;
+      line-height: 40px;
       border-bottom: 1px solid #F5F5F5;
     }
   }

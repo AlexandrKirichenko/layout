@@ -10,12 +10,13 @@
 @import "base/base";
 @import "base/social-icons";
 @import "base/buttons";
+@import "base/hamburger";
 
 // Layouts
 @import "layouts/container";
 @import "layouts/header";
 @import "layouts/columns";
-
+@import "layouts/footer";
 
 // Components
 @import "components/navigation";
@@ -26,5 +27,7 @@
 @import "components/sublist";
 @import "components/standard";
 @import "components/pricing";
+@import "components/reviews";
+@import "components/contact";
 
 

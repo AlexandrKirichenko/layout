@@ -1,0 +1,40 @@
+.reviews__container {
+  padding: 107px 0 100px;
+  
+  .reviews__content {
+  padding-top: 55px;
+  position: relative;
+  .review {
+    max-width: 273px;
+    min-height: 130px;
+    &__desc {
+      padding: 24px 13px 24px 12px;
+      font-style: italic;
+      line-height: 1.2;
+      @include pseudo($top: 132px, $left: 25px) {
+        width: 0px;
+        height: 0px;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-top: 14px solid $clrLightGrey;
+      };
+    }
+    &__avatar {
+      padding-top: 24px;
+      display: flex;
+      h6 {
+        @include font($size: 2rem, $height: 2.4rem, $weight: 700);
+        color: $clrDark;
+      }
+    }
+  }
+  }
+}
+
+.avatar-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-left: 15px;
+}

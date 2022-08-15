@@ -29,13 +29,27 @@
   }
 }
 
-@mixin columns ($width) {
+@mixin columns ($width, $content: space-between) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: $content;
   >* {
     flex-basis: $width;
   }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tabletWidth) { @content; }
+}
+
+
+@mixin media-laptop {
+  @media (max-width: $laptopWidth) { @content; }
+}
+
+
+@mixin media-mobile {
+  @media (max-width: $mobile) { @content; }
 }
 
 
