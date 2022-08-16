@@ -1,5 +1,6 @@
 .design {
   background: $clrDark;
+
  &__title {
    text-align: center;
    position: absolute;
@@ -15,18 +16,18 @@
      @include pseudo($top: 75px)
    }
  }
- 
+  
   &__btn {
     position: absolute;
     z-index: 9;
     left: 50%;
-    transform:translate(-50%, 215px);
+    transform: translate(-50%, 215px);
     color: $clrLight;
     @include media-laptop {
-      transform:translate(-50%, 205px);
+      transform: translate(-50%, 205px);
     }
     @include media-tablet {
-      transform:translate(-50%, 190px);
+      transform: translate(-50%, 190px);
     }
   }
 }
@@ -50,6 +51,7 @@
   @include media-tablet {
     min-height: 275px;
   }
+  
   .design-subtitle {
     @extend %font-titles;
     @include font($size: 1.6rem, $height: 1.6rem, $weight: 300);

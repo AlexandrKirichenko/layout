@@ -49,29 +49,11 @@
     background: $clrOrange;
   }
   a:focus {
-      @extend %transition;
-      background: red;
-      color: red;
-    }
+    @extend %transition;
+  }
   
-  //&:target {
-  //  color: red;
-  //}
 }
-//.collapse > a{
-//  background: #cdf;
-//  cursor: pointer;
-//  display: block;
-//}
-//.collapse:focus{
-//  outline: none;
-//}
-//.collapse > div{
-//  display: none;
-//}
-//.collapse:focus div{
-//  display: block;
-//}
+
 
 .tab > a{
   background: #cdf;
@@ -87,11 +69,6 @@
   display: none;
 }
 
-.tab:focus div{
-  display: block;
-}
-
-//------------------------------
 
 .brands__collapse {
   + input {
@@ -103,10 +80,18 @@
   display: none;
 }
 
-.tab > input:checked ~ .tab__text-content {
+.tab>input:checked ~ .tab__text-content {
+  transition-duration: 2s;
   display: block;
 }
+.tab:focus .tab__text-content
+{
+  transition-duration: 2s;
+}
 
+.tab:focus{
+  outline:none;
+}
 
 .tab__input:checked ~ label {
   background: $clrOrange;
@@ -167,4 +152,3 @@
     display: none;
   }
 }
-

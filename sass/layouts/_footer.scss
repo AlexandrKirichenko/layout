@@ -2,11 +2,16 @@
   background-color: $clrDark;
   min-height: 83px;
   display: flex;
+  
   &__social {
     display: flex;
     gap: 28px;
     padding: 16px 0 10px;
+    @include media-mobile {
+      gap: clamp(15px, calc(10px + 2vw), 28px);
+    }
   }
+  
   p {
     color: $clrMediumGrey;
     text-align: center;

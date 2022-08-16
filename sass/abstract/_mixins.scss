@@ -1,13 +1,13 @@
 @use "sass:math";
 
-@mixin font ($size, $height: $size, $weight: bold, $style: normal) {
+@mixin font($size, $height: $size, $weight: bold, $style: normal) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
   font-style: $style;
 }
 
-@mixin pseudo (
+@mixin pseudo(
   $loc: after,
   $content: '',
   $pos: absolute,
@@ -29,27 +29,33 @@
   }
 }
 
-@mixin columns ($width, $content: space-between) {
+@mixin columns($width, $content: space-between) {
   display: flex;
   flex-wrap: wrap;
   justify-content: $content;
-  >* {
+  > * {
     flex-basis: $width;
   }
 }
 
 @mixin media-tablet {
-  @media (max-width: $tabletWidth) { @content; }
+  @media (max-width: $tabletWidth) {
+    @content;
+  }
 }
 
 
 @mixin media-laptop {
-  @media (max-width: $laptopWidth) { @content; }
+  @media (max-width: $laptopWidth) {
+    @content;
+  }
 }
 
 
 @mixin media-mobile {
-  @media (max-width: $mobile) { @content; }
+  @media (max-width: $mobile) {
+    @content;
+  }
 }
 
 

@@ -4,17 +4,19 @@
   @include media-laptop {
     padding: 80px 20px 75px;
   }
+  
   h2 {
     @include media-laptop {
-      @include pseudo ($top: 59px)
+      @include pseudo($top: 59px)
     }
     @include media-tablet {
-      @include pseudo ($top: 50px)
+      @include pseudo($top: 50px)
     }
     @include media-mobile {
-      @include pseudo ($top: 43px)
+      @include pseudo($top: 43px)
     }
   }
+
   @include media-tablet {
     padding: 60px 20px 55px;
   }
@@ -57,13 +59,15 @@
   }
   @include media-tablet {
     flex-basis: 90%;
-    //margin-top: 20px;
+
   }
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  
   &:hover {
     transform: scale(1.03);
     @extend %transition;
   }
+  
   &__title {
     height: 59px;
     display: flex;
@@ -74,23 +78,28 @@
     @include media-tablet {
       height: 49px;
     }
+    
     h4 {
       color: $clrLight;
     }
   }
+  
   &__price {
     height: 151px;
     position: relative;
     background: $clrDark;
     opacity: 0.8;
+    
     .card__term {
       padding-top: 118px;
-      @include font($size: 1.4rem, $height: 1.5rem, $weight: 500,$style: italic);
+      @include font($size: 1.4rem, $height: 1.5rem, $weight: 500, $style: italic);
     }
+    
     &--bordered {
       border-bottom: 4px solid $clrDarkOrange;
     }
   }
+  
   &__recommended {
     display: flex;
     align-items: center;
@@ -111,6 +120,7 @@
     background: $clrLight;
     border-left: 1px solid #F5F5F5;
     border-right: 1px solid #F5F5F5;
+    
     li {
       height: 40px;
       line-height: 40px;
@@ -138,6 +148,7 @@
   @include font($size: 3rem, $height: 3rem, $weight: 700);
   letter-spacing: 0;
 }
+
 .value__number-sm {
   @include font($size: 9rem, $height: 9rem, $weight: 700);
 }

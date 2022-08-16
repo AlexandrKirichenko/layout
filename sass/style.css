@@ -653,6 +653,11 @@ h4 {
   gap: 28px;
   padding: 16px 0 10px;
 }
+@media (max-width: 30em) {
+  .footer__social {
+    gap: clamp(15px, 10px + 2vw, 28px);
+  }
+}
 .footer p {
   color: #676767;
   text-align: center;
@@ -1040,11 +1045,6 @@ h4 {
 .tabs__collapse:hover {
   background: #F98837;
 }
-.tabs__collapse a:focus {
-  background: red;
-  color: red;
-}
-
 .tab > a {
   background: #cdf;
   cursor: pointer;
@@ -1059,10 +1059,6 @@ h4 {
   display: none;
 }
 
-.tab:focus div {
-  display: block;
-}
-
 .brands__collapse + input {
   display: none;
 }
@@ -1072,7 +1068,16 @@ h4 {
 }
 
 .tab > input:checked ~ .tab__text-content {
+  transition-duration: 2s;
   display: block;
+}
+
+.tab:focus .tab__text-content {
+  transition-duration: 2s;
+}
+
+.tab:focus {
+  outline: none;
 }
 
 .tab__input:checked ~ label {
@@ -1587,19 +1592,54 @@ h4 {
   border-right: 9px solid transparent;
   border-top: 14px solid #F5F5F5;
 }
-.reviews__container .reviews__content .review__avatar {
+@media (max-width: 30em) {
+  .reviews__container .reviews__content .review {
+    padding-top: 30px;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+.reviews__container .reviews__content .review .review {
+  max-width: 273px;
+  min-height: 130px;
+}
+@media (max-width: 48em) {
+  .reviews__container .reviews__content .review .review {
+    flex-basis: 48%;
+    min-width: 300px;
+  }
+}
+.reviews__container .reviews__content .review .review__desc {
+  padding: 24px 13px 24px 12px;
+  font-style: italic;
+  line-height: 1.2;
+  position: relative;
+}
+.reviews__container .reviews__content .review .review__desc::after {
+  content: "";
+  position: absolute;
+  top: 132px;
+  bottom: 0;
+  left: 25px;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 14px solid #F5F5F5;
+}
+.reviews__container .reviews__content .review .review__avatar {
   padding-top: 24px;
   display: flex;
 }
-.reviews__container .reviews__content .review__avatar h6 {
+.reviews__container .reviews__content .review .review__avatar h6 {
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 700;
   font-style: normal;
   color: black;
 }
-
-.avatar-info {
+.reviews__container .avatar-info {
   display: flex;
   flex-direction: column;
   align-content: center;
