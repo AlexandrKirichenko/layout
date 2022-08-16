@@ -1,7 +1,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  max-width:1920px;
+  max-width: 1920px;
   margin-inline: auto;
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ body {
   position: relative;
 }
 
-img,svg {
+img, svg {
   max-width: 100%;
   display: block;
 }
@@ -26,63 +26,64 @@ img,svg {
 
 h1 {
   @extend %font-titles;
-  @include font($size: 3.6rem, $height: 4.3rem, $weight:400);
+  @include font($size: 3.6rem, $height: 4.3rem, $weight: 400);
   color: $clrLight;
   font-size: clamp(3rem, calc(1rem + 2vw), 3.6rem);
-  @include pseudo($top:114,$right: inherit) {
+  @include pseudo($top: 114, $right: inherit) {
     background: $clrOrange;
     width: 64px;
     height: 2px;
     margin: 0px auto -36px;
-  };
+  }
+;
   @include media-laptop {
-    @include font($size: 3.2rem, $height: 3.8rem, $weight:400);
+    @include font($size: 3.2rem, $height: 3.8rem, $weight: 400);
     font-size: clamp(3rem, calc(1rem + 2vw), 3.6rem);
   }
   @include media-tablet {
-    @include font($size: 3.2rem, $height: 3.8rem, $weight:400);
-    //font-size: clamp(2.2rem, calc(1rem + 2vw), 3.2rem);
+    @include font($size: 3.2rem, $height: 3.8rem, $weight: 400);
   }
   @include media-mobile {
-    @include font($size: 2.2rem, $height: 2.8rem, $weight:400);
+    @include font($size: 2.2rem, $height: 2.8rem, $weight: 400);
     @include pseudo($right: inherit) {
       margin: 0px auto -30px;
-    };
+    }
+  ;
   }
 }
 
 h2 {
   @extend %font-titles;
-  @include font($size: 3.6rem, $height: 4.3rem, $weight:400);
+  @include font($size: 3.6rem, $height: 4.3rem, $weight: 400);
   @include media-laptop {
-    @include font($size: 3.2rem, $height: 3.8rem, $weight:400);
+    @include font($size: 3.2rem, $height: 3.8rem, $weight: 400);
     font-size: clamp(3rem, calc(1rem + 2vw), 3.6rem);
   }
   @include media-tablet {
-    @include font($size: 2.6rem, $height: 3.4rem, $weight:400);
+    @include font($size: 2.6rem, $height: 3.4rem, $weight: 400);
   }
   @include media-mobile {
-    @include font($size: 2.4rem, $height: 3rem, $weight:400);
+    @include font($size: 2.4rem, $height: 3rem, $weight: 400);
     font-size: clamp(2.2rem, calc(1rem + 1vw), 2.4rem);
   }
   color: $clrSemiDark;
- 
   
   @include pseudo($top: 65px) {
     background: $clrOrange;
     width: 64px;
     height: 2px;
     margin: 0px auto -30px;
-  };
+  }
+;
 }
 
 h4 {
-  @include font($size: 2.0rem, $height: 1.7rem, $weight:700);
+  @include font($size: 2.0rem, $height: 1.7rem, $weight: 700);
   @include media-tablet {
-    @include font($size: 1.8rem, $height: 2rem, $weight:700);
+    @include font($size: 1.8rem, $height: 2rem, $weight: 700);
   }
   @include media-mobile {
-    @include font($size: 1.6rem, $height: 2rem, $weight:700);
+    @include font($size: 1.6rem, $height: 2rem, $weight: 700);
   }
   color: $clrDark;
 }

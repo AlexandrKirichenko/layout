@@ -12,10 +12,10 @@
   
   h2 {
     @include media-laptop {
-      @include pseudo ($top: 63px)
+      @include pseudo($top: 63px)
     }
     @include media-mobile {
-      @include pseudo ($top: 50px)
+      @include pseudo($top: 50px)
     }
   }
   

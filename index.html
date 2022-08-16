@@ -76,21 +76,12 @@
     </div>
   </article>
   <section class="tabs bg-gray" id="tabs">
-    <!--    <div class="collapse" tabindex="0">-->
-    <!--      <a>Collapse 1</a>-->
-    <!--      <div>Content 1....</div>-->
-    <!--    </div>-->
-
-    <!--    <div class="collapse" tabindex="0">-->
-    <!--      <a>Collapse 2</a>-->
-    <!--      <div>Content 2....</div>-->
-    <!--    </div>-->
     <div class="container tabs__wrapper">
       <div class="tabs__content-container">
         <article class="tab" tabindex="1">
-          <input class="tab__input" id="tab-input-1" type="radio" name="tab" checked>
-          <label class="tabs__collapse" for="tab-input-1">TAB1</label>
-          <div class="tab__text-content">
+          <input class="tab__input" id="tab-input-1" tabindex="1" type="radio" name="tab">
+          <label class="tabs__collapse" for="tab-input-1"><a href="#t1">TAB1</a></label>
+          <div id="t1" class="tab__text-content">
             <h4>Tabs with soft transitioning effect.</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
               bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
@@ -104,10 +95,10 @@
             <button class="btn btn--colored btn--sm">Download</button>
           </div>
         </article>
-        <article class="tab" tabindex="1">
-          <input class="tab__input" id="tab-input-2" type="radio" name="tab">
-          <label class="tabs__collapse" for="tab-input-2">TAB2</label>
-          <div class="tab__text-content">
+        <article class="tab" tabindex="2">
+          <input class="tab__input" id="tab-input-2" tabindex="1" type="radio" name="tab">
+          <label class="tabs__collapse" for="tab-input-2"><a href="#t2">TAB2</a></label>
+          <div id="t2" class="tab__text-content">
             <h4>Tab 2 Headline</h4>
             <p>Vide augue no quo. Ex gubergren necessitatibus eos, usu munere partem ei, ne dolores scaevola
               definitionem
@@ -120,10 +111,10 @@
             </p>
           </div>
         </article>
-        <article class="tab" tabindex="1">
-          <input class="tab__input" id="tab-input-3" type="radio" name="tab">
-          <label class="tabs__collapse" for="tab-input-3">TAB3</label>
-          <div class="tab__text-content">
+        <article class="tab" tabindex="3">
+          <input class="tab__input" id="tab-input-3" tabindex="1" type="radio" name="tab">
+          <label class="tabs__collapse" for="tab-input-3"><a href="#t3">TAB3</a></label>
+          <div id="t3" class="tab__text-content">
             <h4>Tab 3 Headline</h4>
             <p>Nec elit scaevola consetetur in, cu meliore deterruisset duo. Novum iusto disputationi cu mea, nec ad
               nonumy
@@ -379,20 +370,20 @@
       </form>
     </div>
   </section>
-<!--  <footer class="footer">-->
-<!--    <div class="container">-->
-<!--      <div class="footer__social">-->
-<!--        <i class="ico ico&#45;&#45;sm fab fa-facebook-f"></i>-->
-<!--        <i class="ico ico&#45;&#45;sm fab fa-twitter"></i>-->
-<!--        <i class="ico ico&#45;&#45;sm fab fa-google-plus-g"></i>-->
-<!--        <i class="ico ico&#45;&#45;sm fab fa-pinterest"></i>-->
-<!--        <i class="ico ico&#45;&#45;sm fab fa-instagram"></i>-->
-<!--        <i class="ico ico&#45;&#45;sm fab fa-stumbleupon"></i>-->
-<!--        <i class="ico ico&#45;&#45;sm fas fa-rss"></i>-->
-<!--      </div>-->
-<!--      <p>© 2015 Axure Themes</p>-->
-<!--    </div>-->
-<!--  </footer>-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__social">
+        <i class="ico ico--sm fab fa-facebook-f"></i>
+        <i class="ico ico--sm fab fa-twitter"></i>
+        <i class="ico ico--sm fab fa-google-plus-g"></i>
+        <i class="ico ico--sm fab fa-pinterest"></i>
+        <i class="ico ico--sm fab fa-instagram"></i>
+        <i class="ico ico--sm fab fa-stumbleupon"></i>
+        <i class="ico ico--sm fas fa-rss"></i>
+      </div>
+      <p>© 2015 Axure Themes</p>
+    </div>
+  </footer>
 </main>
 </body>
 </html>

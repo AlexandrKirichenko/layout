@@ -19,6 +19,7 @@ nav {
     user-select: none;
     .nav {
       flex-direction: column;
+      
       &:before {
         position: absolute;
         top: 50%;
@@ -28,13 +29,13 @@ nav {
         width: 100vw;
         height: 100vh;
       }
-      a{
+      
+      a {
         font-size: 24px;
       }
     }
   }
 }
-
 
 .nav {
   display: flex;
@@ -49,6 +50,7 @@ nav {
   list-style: none;
   color: $clrLight;
   @include font($size: 1.4rem, $height: inherit, $weight: 400);
+  
   &:hover,
   &:focus {
     color: $clrOrange;

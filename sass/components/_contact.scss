@@ -7,15 +7,18 @@
   @include media-tablet {
     padding: 60px 0 65px;
   }
+
   p {
     padding-top: 50px;
     @include media-laptop {
       padding-top: 56px;
     }
   }
+  
   h2 {
     @include media-laptop {
-      @include pseudo ($top: 56px)
+      @include pseudo($top: 56px)
+
     }
   }
 }
@@ -32,9 +35,11 @@
   @include media-tablet {
     padding-top: 15px;
   }
+
   &__element {
     height: 31px;
   }
+  
   input, textarea {
     border-bottom: 1px solid $clrInputsLining;
     width: min(96%, 527px);
@@ -45,11 +50,12 @@
     @include media-mobile {
       margin: 25px auto 0;
     }
-   
+
     &::placeholder {
       padding: 10px 0 9px 13px;
     }
   }
+  
   &__inputs {
     display: flex;
     flex-direction: column;
@@ -92,9 +98,11 @@
   right: 5%;
   font-size: 16px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  
   &:hover {
     background: $clrLightOrange;
   }
+  
   a {
     color: #ffffff;
   }

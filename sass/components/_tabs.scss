@@ -1,5 +1,5 @@
 .tabs__content-container {
-  @include media-mobile{
+  @include media-mobile {
     display: flex;
     justify-content: center
   }
@@ -39,7 +39,7 @@
     width: 95px;
     height: 95px;
   }
-  @include media-tablet{
+  @include media-tablet {
     width: 80px;
     height: 80px;
   }
@@ -48,50 +48,25 @@
     @extend %transition;
     background: $clrOrange;
   }
-  a:focus {
-      @extend %transition;
-      background: red;
-      color: red;
-    }
   
-  //&:target {
-  //  color: red;
-  //}
+  a:focus {
+    @extend %transition;
+  }
 }
-//.collapse > a{
-//  background: #cdf;
-//  cursor: pointer;
-//  display: block;
-//}
-//.collapse:focus{
-//  outline: none;
-//}
-//.collapse > div{
-//  display: none;
-//}
-//.collapse:focus div{
-//  display: block;
-//}
 
-.tab > a{
+.tab > a {
   background: #cdf;
   cursor: pointer;
   display: block;
 }
 
-.tab:focus{
+.tab:focus {
   outline: none;
 }
 
-.tab > div{
+.tab > div {
   display: none;
 }
-
-.tab:focus div{
-  display: block;
-}
-
-//------------------------------
 
 .brands__collapse {
   + input {
@@ -103,10 +78,9 @@
   display: none;
 }
 
-.tab > input:checked ~ .tab__text-content {
-  display: block;
+.tab:focus {
+  outline: none;
 }
-
 
 .tab__input:checked ~ label {
   background: $clrOrange;
@@ -136,17 +110,19 @@
   @include media-mobile {
     max-width: 90%;
     left: 50%;
-    transform: translate(-50%,100px);
+    transform: translate(-50%, 100px);
     display: flex;
   }
   
   padding-right: 10px;
+  
   p:nth-child(2) {
     padding-top: 52px;
     @include media-laptop {
       padding-top: 20px;
     }
   }
+  
   p:nth-child(3) {
     padding: 20px 0 49px;
     @include media-laptop {
@@ -166,5 +142,30 @@
   @include media-tablet {
     display: none;
   }
+}
+
+.tab a {
+  display: block;
+  background: transparent;
+  padding: 48px 39px;
+  @include media-laptop {
+    padding: 40px 30px;
+  }
+  @include media-tablet {
+    padding: 33px 21px;
+  }
+  color: white;
+  
+  &:focus {
+    color: tomato;
+  }
+}
+
+.tab > div {
+  display: none;
+}
+
+.tab > div:target {
+  display: block;
 }
 

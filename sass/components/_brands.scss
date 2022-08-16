@@ -18,12 +18,14 @@
   @include media-laptop {
     max-width: 160px;
   }
+  
   p {
     padding-top: 5px;
     @include media-laptop {
       display: none;
     }
   }
+  
   @include media-mobile {
     margin: 18px 0 20px 10px;
   }
