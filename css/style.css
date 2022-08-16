@@ -1075,6 +1075,14 @@ h4 {
   background: #F98837;
 }
 
+.tab__input:checked ~ label a {
+  background: #F98837;
+}
+
+.tab__input:checked ~ .tab__text-content {
+  display: block;
+}
+
 .tab__text-content {
   display: none;
 }
@@ -1145,7 +1153,6 @@ h4 {
 .tab a {
   display: block;
   background: transparent;
-  padding: 48px 39px;
   color: white;
 }
 @media (max-width: 64em) {
@@ -1159,15 +1166,20 @@ h4 {
   }
 }
 .tab a:focus {
-  color: tomato;
+  color: #75ff47;
+  background: orange;
+}
+.tab a:active {
+  color: #69ff47;
+  background: orange;
 }
 
 .tab > div {
   display: none;
 }
 
-.tab > div:target {
-  display: block;
+.tab > a:target {
+  boreder: 2px solid blue;
 }
 
 .sublist__container {
