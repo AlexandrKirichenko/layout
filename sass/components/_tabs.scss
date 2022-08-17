@@ -75,7 +75,7 @@
 }
 
 .tab > input:focus ~ .tabs__collapse {
-  color: tomato;
+  color: $clrDark;
 }
 
 input:checked ~ .tabs__collapse {

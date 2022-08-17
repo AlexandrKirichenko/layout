@@ -1068,7 +1068,7 @@ h4 {
 }
 
 .tab > input:focus ~ .tabs__collapse {
-  color: tomato;
+  color: black;
 }
 
 input:checked ~ .tabs__collapse {
