@@ -78,7 +78,7 @@
   color: tomato;
 }
 
-input:checked ~ .tab_inp {
+input:checked ~ .tabs__collapse {
   background: $clrOrange;
 }
 

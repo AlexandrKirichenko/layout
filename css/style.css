@@ -1071,7 +1071,7 @@ h4 {
   color: tomato;
 }
 
-input:checked ~ .tab_inp {
+input:checked ~ .tabs__collapse {
   background: #F98837;
 }
 
