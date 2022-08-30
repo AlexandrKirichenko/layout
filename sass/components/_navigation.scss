@@ -8,7 +8,10 @@
 }
 
 nav {
-  @include media-laptop {
+  @include media-tablet {
+  
+  }
+  @include media-mobile {
     display: none;
     position: fixed;
     z-index: 99;

@@ -672,7 +672,7 @@ h4 {
   padding: 18px 8px;
 }
 
-@media (max-width: 64em) {
+@media (max-width: 30em) {
   nav {
     display: none;
     position: fixed;
