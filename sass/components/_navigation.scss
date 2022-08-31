@@ -8,9 +8,6 @@
 }
 
 nav {
-  @include media-tablet {
-  
-  }
   @include media-mobile {
     display: none;
     position: fixed;
@@ -43,6 +40,9 @@ nav {
 .nav {
   display: flex;
   gap: 48px;
+  @include media-tablet {
+    gap: 25px;
+  }
 }
 
 .header__nav {

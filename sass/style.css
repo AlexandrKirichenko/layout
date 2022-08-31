@@ -704,6 +704,11 @@ h4 {
   display: flex;
   gap: 48px;
 }
+@media (max-width: 48em) {
+  .nav {
+    gap: 25px;
+  }
+}
 
 .header__nav {
   margin-left: auto;
